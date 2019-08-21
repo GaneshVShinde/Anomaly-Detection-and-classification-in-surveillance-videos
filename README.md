@@ -29,6 +29,7 @@ for a video segment, we take the average of all
 * Tensorflow
 * Python
 * Caffe(To extract features)
+* Colab
 
 ### Used Papers
 * http://openaccess.thecvf.com/content_cvpr_2018/papers/Sultani_Real-World_Anomaly_Detection_CVPR_2018_paper.pdf
