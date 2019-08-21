@@ -26,9 +26,9 @@ for a video segment, we take the average of all
 16-frame clip features within that segment.
 
 ### Used Tools
-Tensorflow
-Python
-Caffe(To extract features)
+* Tensorflow
+* Python
+* Caffe(To extract features)
 
 ### Used Papers
 * http://openaccess.thecvf.com/content_cvpr_2018/papers/Sultani_Real-World_Anomaly_Detection_CVPR_2018_paper.pdf
