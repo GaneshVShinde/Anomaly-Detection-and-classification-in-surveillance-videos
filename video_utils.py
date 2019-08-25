@@ -66,6 +66,20 @@ def extract_frames(video, start_frame, frame_dir, num_frames_to_extract=16):
     return
 
 
+def create_video(Image_source,output_video):
+    img_array = []
+    for filename in glob.glob(Image_source+'/*.jpg'):
+        img = cv2.imread(filename)
+        height, width, layers = img.shape
+        size = (width,height)
+        img_array.append(img)
+    
+    out = cv2.VideoWriter(output_video,cv2.VideoWriter_fourcc(*'DIVX'), 10, size)
+    
+    for i in range(len(img_array)):
+        out.write(img_array[i])
+    
+    out.release()
 
 # def genrate_video_frame(file_path):
 #     tmp_dir = "./test2" #to save extracted Frame
